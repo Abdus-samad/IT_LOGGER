@@ -12,6 +12,9 @@ export const getTechs = () => async dispatch => {
     setLoading();
     
     const res = await fetch('/techs');
+  if (!res){
+    
+  }
     const data = await res.json();
     
     dispatch({
